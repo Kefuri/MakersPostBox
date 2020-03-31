@@ -492,8 +492,8 @@ ZeroLengthPredicate:
 
 AllCops:
   Exclude:
-    - ./rails_care_package/bin/*
-    - ./rails_care_package/config/*
+    - ./bin/*
+    - ./config/**/*
 
 inherit_mode:
   merge:

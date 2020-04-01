@@ -9,6 +9,8 @@ env:
 services:
 - postgresql
 before_script:
+- bin/yarn
+- bin/rails db:migrate RAILS_ENV=test
 - bundle exec rails db:create
 - bundle exec rails db:migrate
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
@@ -16,6 +18,9 @@ before_script:
 - chmod +x ./cc-test-reporter
 - "./cc-test-reporter before-build"
 script:
+- bin/rails test
+- bin/yarn test
+- bin/webpack-dev-server --host 127.0.0.1
 - bundle
 - bundle exec rspec
 - bundle exec rubocop

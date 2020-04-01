@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/echo/Desktop/Projects/PostBox/spec/features/premade_dogs_spec.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/spec/features/premade_dogs_spec.rb": [
         1,
         null,
         1,
@@ -14,7 +14,7 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/spec/rails_helper.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -80,14 +80,14 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/environment.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/application.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/application.rb": [
         1,
         null,
         1,
@@ -108,13 +108,13 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/boot.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/environments/test.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/environments/test.rb": [
         null,
         null,
         null,
@@ -164,7 +164,7 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/application_controller_renderer.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -174,7 +174,7 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/assets.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -190,7 +190,7 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/backtrace_silencers.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -199,7 +199,7 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/content_security_policy.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -231,20 +231,20 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/cookies_serializer.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/filter_parameter_logging.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/inflections.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -262,13 +262,13 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/mime_types.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/initializers/wrap_parameters.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -284,7 +284,7 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/config/routes.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/config/routes.rb": [
         1,
         1,
         null,
@@ -297,33 +297,33 @@
         null,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/app/helpers/application_helper.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/app/helpers/home_helper.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/app/helpers/premade_helper.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/app/helpers/premade_helper.rb": [
         1,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/app/controllers/application_controller.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/app/controllers/home_controller.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/app/controllers/home_controller.rb": [
         1,
         null
       ],
-      "/Users/echo/Desktop/Projects/PostBox/app/controllers/premade_controller.rb": [
+      "/Users/student/Desktop/makers/finalproject/MakersPostBox/app/controllers/premade_controller.rb": [
         1,
         1,
         null,
         null
       ]
     },
-    "timestamp": 1585747198
+    "timestamp": 1585751548
   }
 }

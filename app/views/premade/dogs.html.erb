@@ -2,18 +2,31 @@
 <html>
 <head>
   <%# TODO: Sort out why title isn't showing %>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" >
   <title>Dogs gift</title>
 </head>
 <body>
   <h1>Gift of Dogs</h1>
   <p>Here are your cute dog pics!</p>
-  <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" alt="Dog with glasses">
-  <img src="https://media.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif" alt="Husky gif ears">
-  <%# Embed youtube videos from share - embed - copy text %>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/3ggIHfwkIWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <br>
+  <div>
   <a href="/home/index">Back to package selection</a>
   <p>Or stay, if you really really love dogs...</p>
+  </div>
+  <div class="gallery" id="gallery">
+    <div class="gallery-item">
+    <div class="content"><img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" alt="Dog with glasses"></div><br>
+    </div> 
+    <div class="gallery-item">
+    <div class="content"><img src="https://media.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif" alt="Husky gif ears">
+      <%# Embed youtube videos from share - embed - copy text %></div><br>
+    </div> 
+    <div class="gallery-item">
+    <div class="content"><iframe width="560" height="315" src="https://www.youtube.com/embed/3ggIHfwkIWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br>
+    </div> 
+  </div> 
+
+
 </body>
 </html>
 

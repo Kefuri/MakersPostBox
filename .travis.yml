@@ -9,7 +9,6 @@ env:
 services:
 - postgresql
 before_script:
-- RAILS_ENV=test bundle exec rails webpacker:compile
 - bundle exec rails db:create
 - bundle exec rails db:migrate
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64

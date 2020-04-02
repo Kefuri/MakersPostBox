@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Kefuri/MakersPostBox.svg?branch=master)](https://travis-ci.org/Kefuri/MakersPostBox)
-![Maintainability](https://api.codeclimate.com/v1/badges/8f9ec95783638f897810/maintainability)](https://codeclimate.com/github/Kefuri/MakersPostBox/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8f9ec95783638f897810/maintainability)](https://codeclimate.com/github/Kefuri/MakersPostBox/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/8f9ec95783638f897810/test_coverage)](https://codeclimate.com/github/Kefuri/MakersPostBox/test_coverage)
 
 

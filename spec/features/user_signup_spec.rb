@@ -20,7 +20,7 @@ RSpec.feature 'sign up', feature: :feature do
   end
 
   scenario "user sees an error message when using a password too long" do
-    sign_up("Peepo", 'Osu', "peepoosu@example.com", "YESSSSSSSIR")
-    expect(page).to have_content("is too long (maximum is 10 characters)")
+    sign_up("Peepo", 'Osu', "peepoosu@example.com", "YESSSSSSSSSSSSSSSSSSSSIR")
+    expect(page).to have_content("is too long (maximum is 20 characters)")
   end
 end

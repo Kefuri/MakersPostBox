@@ -171,7 +171,8 @@ body {
   }
 
 .bottom {
-  position: fixed;
+  position: relative;
+  padding-top: 10px;
   bottom: 0;
 }
   

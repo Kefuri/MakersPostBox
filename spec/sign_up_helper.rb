@@ -1,9 +1,8 @@
-
 def sign_up(
-  first_name="John",
-  last_name="Smith",
-  email="john@example.com",
-  password="password")
+  first_name = "John",
+  last_name = "Smith",
+  email = "john@example.com",
+  password = "password")
 
   visit '/'
   fill_in 'First name', with: first_name

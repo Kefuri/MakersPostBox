@@ -4,8 +4,14 @@ class UsersController < ApplicationController
   end
   
   def create
-    @user = User.create(user_params)
-    redirect_to '/home/index'
+    @user = User.new(user_params)
+    if @user.save
+      User.create(user_params)
+      flash[:success] = "Sign Up Successful!"
+      redirect_to '/home/index'
+    else
+      render 'signup'
+    end
   end
 
   private

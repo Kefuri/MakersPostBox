@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet">
     <div class="container">
@@ -27,7 +28,41 @@
   <title>Dogs gift</title>
 </head>
 <body>
+
 <div class="container">
+<script> var gallery = document.querySelector('#gallery');
+      var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+      var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+      var resizeAll = function () {
+          var altura = getVal(gallery, 'grid-auto-rows');
+          var gap = getVal(gallery, 'grid-row-gap');
+          gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+              var el = item;
+              el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+          });
+      };
+      gallery.querySelectorAll('img').forEach(function (item) {
+          item.classList.add('byebye');
+          if (item.complete) {
+              console.log(item.src);
+          }
+          else {
+              item.addEventListener('load', function () {
+                  var altura = getVal(gallery, 'grid-auto-rows');
+                  var gap = getVal(gallery, 'grid-row-gap');
+                  var gitem = item.parentElement.parentElement;
+                  gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+                  item.classList.remove('byebye');
+              });
+          }
+      });
+      window.addEventListener('resize', resizeAll);
+      gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+          item.addEventListener('click', function () {        
+              item.classList.toggle('full');        
+          });
+      });
+    </script>
   <h1>Gift of Dogs</h1>
   <p>Here are your cute dog pics!</p>
   <p>Or stay, if you really really love dogs...</p>

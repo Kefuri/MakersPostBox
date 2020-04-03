@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 1) do
+ActiveRecord::Schema.define(version: 2020_04_03_092132) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "elements", force: :cascade do |t|
+    t.string "link"
+    t.string "alt_tag"
+    t.bigint "packages_id"
+    t.index ["packages_id"], name: "index_elements_on_packages_id"
+  end
 
   create_table "packages", force: :cascade do |t|
     t.bigint "users_id"
@@ -29,5 +36,6 @@ ActiveRecord::Schema.define(version: 1) do
     t.string "password"
   end
 
+  add_foreign_key "elements", "packages", column: "packages_id"
   add_foreign_key "packages", "users", column: "users_id"
 end

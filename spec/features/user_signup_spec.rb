@@ -25,7 +25,6 @@ RSpec.feature 'sign up', feature: :feature do
   end
 
   scenario "user can't sign up if email already used" do
-    p page
     sign_up
     expect(page).to have_content("Welcome to Postbox!")
     sign_up

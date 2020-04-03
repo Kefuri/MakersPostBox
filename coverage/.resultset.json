@@ -264,8 +264,7 @@
         1,
         1,
         1,
-        1,
-        1,
+        0,
         null,
         null
       ],
@@ -302,6 +301,19 @@
         1,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/spec/sessions_controller_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -354,6 +366,8 @@
         4,
         4,
         null,
+        4,
+        null,
         2,
         2,
         null,
@@ -373,20 +387,8 @@
         1,
         1,
         null
-      ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/controllers/sessions_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null
       ]
     },
-    "timestamp": 1585908814
+    "timestamp": 1585911384
   }
 }

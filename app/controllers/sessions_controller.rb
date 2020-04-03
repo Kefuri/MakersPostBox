@@ -6,5 +6,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    
+    redirect_to '/users/signin'
   end
 end

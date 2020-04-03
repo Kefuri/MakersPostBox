@@ -30,67 +30,27 @@
 <body>
 
 <div class="container">
-<script> var gallery = document.querySelector('#gallery');
-      var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-      var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-      var resizeAll = function () {
-          var altura = getVal(gallery, 'grid-auto-rows');
-          var gap = getVal(gallery, 'grid-row-gap');
-          gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-              var el = item;
-              el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-          });
-      };
-      gallery.querySelectorAll('img').forEach(function (item) {
-          item.classList.add('byebye');
-          if (item.complete) {
-              console.log(item.src);
-          }
-          else {
-              item.addEventListener('load', function () {
-                  var altura = getVal(gallery, 'grid-auto-rows');
-                  var gap = getVal(gallery, 'grid-row-gap');
-                  var gitem = item.parentElement.parentElement;
-                  gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-                  item.classList.remove('byebye');
-              });
-          }
-      });
-      window.addEventListener('resize', resizeAll);
-      gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-          item.addEventListener('click', function () {        
-              item.classList.toggle('full');        
-          });
-      });
-    </script>
+<script src='/app/assets/javascripts/application.js'></script>
   <h1>Gift of Dogs<i class="fas fa-dog"></i></h1>
   <p>Here are your cute dog pics!</p>
-  <p>Or stay, if you really really love dogs...</p>
-  <div class="gallery" id="gallery">
-      <div class="gallery-item">
-        <div class="content"><img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" alt="Dog with glasses"></div>
-      </div>
-      <div class="gallery-item">
-        <div class="content"><img src="https://media.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif" alt="Husky gif ears"></div>
-      </div>
-      <%# Embed youtube videos from share - embed - copy text %>
-      <div class="gallery-item">
-        <div class="content"><iframe width="560" height="315" src="https://www.youtube.com/embed/3ggIHfwkIWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      </div>
-      <div class="gallery-item">
-        <div class="content"><img src="https://images.unsplash.com/photo-1520087619250-584c0cbd35e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=685&q=80" alt="puppy"></div>
-      </div>    
-      <div class="gallery-item">
-        <div class="content"><iframe width="560" height="315" src="https://www.youtube.com/embed/Psv5dmrs3U0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      </div>
-      <div class="gallery-item">
-        <div class="content"><img src="https://images.unsplash.com/photo-1548658166-136d9f6a7e76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="puppy yawning"></div>
-      </div>
-      <div class="gallery-item">
-        <div class="content"><img src="https://images.unsplash.com/photo-1516371535707-512a1e83bb9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="puppy yawning"></div>
-      </div> 
-  </div>
 
+<div class="gallery" id="gallery">
+  <% @resources.each do | resource | %>
+  <% if resource.link.include? "youtube.com/embed" %>
+    <div class="gallery-item">
+      <div class="content">
+        <iframe width="560" height="315" src=<%= resource.link %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt=<%= resource.alt_tag %>></iframe>
+      </div>
+    </div>
+  <% else %>
+    <div class="gallery-item">
+      <div class="content">
+        <img src=<%= resource.link %> alt=<%= resource.alt_tag %> >
+      </div>
+    </div>
+  <% end %>
+<% end %>
+</div>
 
   <div class="bottom">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   </div>

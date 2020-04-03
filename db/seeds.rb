@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-premade_user =  User.create(first_name: "Premade", last_name: "Packager", email:"premadepackager@example.com", password:"Pr3mad4Pack")
+premade_user =  User.create(first_name: "Premade", last_name: "Packager", email: "premadepackager@example.com", password: "Pr3mad4Pack")
 
-premade_package_dogs = Package.create(users_id: premade_user.id, created_at: Time.now, updated_at: Time.now)
+premade_package_dogs = Package.create(users_id: premade_user.id, created_at: Time.now, updated_at: Time.now, premadepackage: "dogs")
 
 
 elements_for_dog_package = [

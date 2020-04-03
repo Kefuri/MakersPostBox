@@ -7,5 +7,4 @@ RSpec.feature 'sign out', feature: :feature do
     click_link('Sign out')
     expect(page).to have_content("You have logged out")
   end
-  # TODO : user signs in then logs out
 end

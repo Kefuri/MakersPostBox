@@ -10,7 +10,7 @@ RSpec.feature 'sign in', feature: :feature do
   scenario 'user signs up then logs out then logs in with wrong combo' do
     sign_up
     click_link('Sign out')
-    sign_in(password = "passwfkdsjrd")
+    sign_in("john@example.com", "passwfkdsjrd")
     expect(page).to have_content("Invalid email/password combination")
   end
 end

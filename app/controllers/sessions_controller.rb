@@ -11,8 +11,8 @@ class SessionsController < ApplicationController
     if user && user.password == params[:session][:password]
       successful_session(user)
     else
-      flash.now[:danger] = 'Invalid email/password combination'
-      render 'new'
+      flash[:success] = 'Invalid email/password combination'
+      redirect_to '/users/signin'
     end
   end
 

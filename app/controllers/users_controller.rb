@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  skip_before_action :require_login
+
   def signup
     @user = User.new()
   end
@@ -29,6 +32,7 @@ class UsersController < ApplicationController
 
   def navigate_home_if_successful
     if @user.save
+      session[:current_user_id] = @user.id
       flash[:success] = "Sign Up Successful!"
       redirect_to '/home/index'
       # TODO: refactor this out into sessions controller

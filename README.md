@@ -50,9 +50,10 @@ To migrate the development and test databases, please run the following command:
 $ rail db:create
 ```
 
-4. To poplulate the databases with the appropriate tables, run the following migrations:
+4. To poplulate the databases with the appropriate tables, run the following migrations and seeds to add in premade gift packages:
 ```
 $ rails db:migrate
+$ rails db:seed
 ```
 
 5. Run the app on a local server: 

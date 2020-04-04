@@ -38,7 +38,7 @@ class UsersController < ApplicationController
       # TODO: refactor this out into sessions controller
       session[:current_user_id] = @user.id
     else
-      flash[:success] = "Sign up failed to save"
+      flash[:error] = "Sign up failed to save"
       render 'signup'
     end
   end

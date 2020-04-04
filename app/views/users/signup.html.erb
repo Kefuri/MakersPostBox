@@ -4,6 +4,9 @@
     <div class="success_flash">
       <%= flash[:success]%>
     </div>
+    <div class="error_flash">
+      <%= flash[:error]%>
+    </div>
 
     <%= bootstrap_form_for(@user) do |form| %>
       <p>

@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   end
 
   def try_again
-    flash[:success] = "Email already in use"
+    flash[:error] = "Email already in use"
     redirect_to '/'
   end
 

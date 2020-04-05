@@ -21,10 +21,12 @@
         </div>
         <div>
           <ul class="nav nav-pills justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link text-danger" href="/home/index">Home</a>
-            </li>
-
+            <% if @uri != '/users/signup' && @uri != '/users/signin' %>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="/home/index">Home</a>
+              </li>
+            <% end %>
+            
             <% if @uri == '/users/signin' %>
               <li class="nav-item">
                 <a class="nav-link text-danger" href="/users/signup">Sign up</a>

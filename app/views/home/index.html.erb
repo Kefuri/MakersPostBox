@@ -6,6 +6,8 @@
   <title>Home Page</title>
 </head>
 <body>
+  <% @uri = request.env['PATH_INFO'] %>
+
   <div class="success_flash">
   <%= flash[:success]%>
   </div>

@@ -23,4 +23,12 @@ RSpec.feature 'sign up', feature: :feature do
     sign_up("Peepo", 'Osu', "peepoosu@example.com", "YESSSSSSSSSSSSSSSSSSSSIR")
     expect(page).to have_content("is too long (maximum is 20 characters)")
   end
+
+  scenario "user can't sign up if email already used" do
+    sign_up
+    expect(page).to have_content("Welcome to Postbox!")
+    sign_up
+    expect(page).to have_content("Email already in use")
+    expect(page).to have_current_path('/')
+  end
 end

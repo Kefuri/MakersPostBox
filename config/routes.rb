@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
 
-  root 'users#signup'
+  root 'home#index'
 end

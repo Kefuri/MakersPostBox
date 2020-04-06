@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/spec/features/load_premade_dogs_package_spec.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/spec/features/load_premade_dogs_package_spec.rb": [
         1,
         null,
         1,
@@ -11,14 +11,14 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/environment.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/application.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/application.rb": [
         1,
         null,
         1,
@@ -39,13 +39,13 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/boot.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/environments/test.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/environments/test.rb": [
         null,
         null,
         null,
@@ -95,7 +95,7 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/application_controller_renderer.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -105,7 +105,7 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/assets.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -121,7 +121,7 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/backtrace_silencers.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -130,7 +130,7 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/content_security_policy.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -162,20 +162,20 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/cookies_serializer.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/filter_parameter_logging.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/inflections.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -193,13 +193,13 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/mime_types.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/initializers/wrap_parameters.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -215,7 +215,7 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/config/routes.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/config/routes.rb": [
         1,
         1,
         null,
@@ -235,19 +235,19 @@
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/helpers/application_helper.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/helpers/home_helper.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/helpers/premade_helper.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/helpers/premade_helper.rb": [
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/helpers/sessions_helper.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/helpers/sessions_helper.rb": [
         1,
         1,
         1,
@@ -256,45 +256,15 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/helpers/user_helper.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/helpers/user_helper.rb": [
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/spec/features/premade_dogs_spec.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/spec/features/premade_dogs_spec.rb": [
         1,
         null,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/spec/features/user_signin_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/spec/features/user_signout_spec.rb": [
-        1,
-        null,
         1,
         1,
         1,
@@ -304,14 +274,8 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/spec/features/user_signup_spec.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/spec/features/user_signin_spec.rb": [
         1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
         null,
         1,
         1,
@@ -320,16 +284,16 @@
         1,
         1,
         null,
-        null,
         1,
         1,
-        1,
-        null,
-        null,
         1,
         1,
         1,
         null,
+        null
+      ],
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/spec/features/user_signout_spec.rb": [
+        1,
         null,
         1,
         1,
@@ -340,7 +304,43 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/spec/sessions_controller_spec.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/spec/features/user_signup_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/spec/sessions_controller_spec.rb": [
         null,
         null,
         null,
@@ -353,7 +353,7 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/db/seeds.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/db/seeds.rb": [
         null,
         null,
         null,
@@ -381,7 +381,7 @@
         7,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/models/user.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/models/user.rb": [
         1,
         1,
         1,
@@ -389,21 +389,21 @@
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/models/application_record.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/models/package.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/models/package.rb": [
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/models/element.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/models/element.rb": [
         1,
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/controllers/application_controller.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/controllers/application_controller.rb": [
         1,
         1,
         null,
@@ -412,11 +412,11 @@
         1,
         null,
         1,
-        11,
+        12,
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/controllers/premade_controller.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/controllers/premade_controller.rb": [
         1,
         1,
         1,
@@ -425,13 +425,13 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/controllers/users_controller.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/controllers/users_controller.rb": [
         1,
         null,
         1,
         null,
         1,
-        11,
+        10,
         null,
         null,
         1,
@@ -473,11 +473,11 @@
         null,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/controllers/home_controller.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/controllers/home_controller.rb": [
         1,
         null
       ],
-      "/Users/student/Documents/Projects/Makers/Final-project/MakersPostBox/app/controllers/sessions_controller.rb": [
+      "/Users/chriseadie/Documents/Projects/Weeks11and12/MakersPostBox/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -504,6 +504,6 @@
         null
       ]
     },
-    "timestamp": 1586015217
+    "timestamp": 1586168160
   }
 }

@@ -1,1 +1,46 @@
 Welcome to your gift!
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dogs gift</title>
+  </head>
+<body>
+<% @uri = request.env['PATH_INFO'] %>
+
+<div class="container">
+  <script src='/app/assets/javascripts/application.js'></script>
+  <h1>Gift of Dogs<i class="fas fa-dog"></i></h1>
+  <p>Here are your cute dog pics!</p>
+
+  <div class="gallery" id="gallery">
+    <% @resources.each do | resource | %>
+      <% if resource.link.include? "youtube.com/embed" %>
+        <div class="gallery-item">
+          <div class="content">
+            <iframe width="560" height="315" src=<%= resource.link %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt=<%= resource.alt_tag %>></iframe>
+          </div>
+        </div>
+      <% else %>
+        <div class="gallery-item">
+          <div class="content">
+            <img src=<%= resource.link %> alt=<%= resource.alt_tag %> >
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+<div class="bottom">
+  <div>
+  <%# TODO: give this functionality %>
+    <div class="popup" onclick="myFunction()">Share this page!
+    <span class="popuptext" id="sharePopup">Your url is:</span>
+</div>
+  </div>
+  <div>
+    Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+  </div>
+</div>
+</body>
+</html>

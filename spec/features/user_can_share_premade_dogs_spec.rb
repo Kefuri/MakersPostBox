@@ -39,6 +39,7 @@ TODO:
 - editing pages url (almost done)
 - shared pages saved in db with the corresponding user id (for a history page later)
 - refactor premade controller
+- refactor share page
 - make work for cats
 - edit pages to make links more obvious
 

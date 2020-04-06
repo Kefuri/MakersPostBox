@@ -21,18 +21,30 @@
         </div>
         <div>
           <ul class="nav nav-pills justify-content-end">
+            <% if @uri != '/users/signup' && @uri != '/users/signin' %>
               <li class="nav-item">
                 <a class="nav-link text-danger" href="/home/index">Home</a>
               </li>
+            <% end %>
+            
+            <% if @uri == '/users/signin' %>
               <li class="nav-item">
                 <a class="nav-link text-danger" href="/users/signup">Sign up</a>
               </li>
+            <% end %>
+
+            <% if @uri == '/users/signup' %>
               <li class="nav-item">
                 <a class="nav-link text-danger" href="/users/signin">Sign in</a>
               </li>
+            <% end %>
+
+            <% if @uri != '/users/signup' && @uri != '/users/signin' %>
               <li class="nav-item">
                 <a class="nav-link text-danger" href="/users/destroy">Sign out</a>
               </li>
+            <% end %>
+
           </ul>
         </div>
       </nav>

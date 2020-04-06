@@ -20,5 +20,6 @@ Rails.application.routes.draw do
     resources :dogs, :cats
   end
 
-  root 'users#signup'
+  root 'home#index'
+
 end

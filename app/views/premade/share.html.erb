@@ -7,7 +7,7 @@ Welcome to your gift!
   </head>
 <body>
 <% @uri = request.env['PATH_INFO'] %>
-<script src='/app/assets/javascripts/popups.js'></script>
+<%# <script src='/app/assets/javascripts/popups.js'></script> %>
 <div class="container">
   <script src='/app/assets/javascripts/application.js'></script>
   <h1>Gift of Dogs<i class="fas fa-dog"></i></h1>
@@ -122,16 +122,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 <div class="form-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
-    <h1>Your url is:</h1>
+    <h1 id=>Your url is:</h1>
 
-    <input type="text" value="RUBY EXTRAPOLATE URL LINK TO GO HERE" id="urlLink">
+    <input type="text" id="urlLink" value="GET URL LINK AND PUT HERE" >
+
+    <p id="urltext">Please try again</p>
+
+    <script>
+    document.getElementById("urltext").innerHTML = window.location.href;
+    </script>
+
     <button type="button" class="btn copy" onclick="copyURL()">Copy text</button>
-
     <button type="button" class="btn copy" onclick="closeForm()">Close</button>
   </form>
 </div>
 
 <script>
+function getURL() {
+document.getElementById("urlLink").innerHTML = window.location.href;
+}
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
@@ -139,9 +148,6 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
-// function copyURL() {
-//   document.getElementById("url").innerHTML = window.location.hostname;
-// }
 
 function copyURL() {
   /* Get the text field */

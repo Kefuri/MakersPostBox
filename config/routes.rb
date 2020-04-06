@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get 'users/destroy', to: 'sessions#destroy'
 
   get 'premade/dogs'
-  get 'premade/edit', to: 'premade#edit', as: 'premade'
+  get 'premade/edit', to: 'premade#edit'
+  get 'premade/share', to: 'premade#share'
 
   get 'home/index'
 

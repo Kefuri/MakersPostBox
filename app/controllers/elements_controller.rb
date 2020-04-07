@@ -8,7 +8,7 @@ class ElementsController < ApplicationController
     else
       flash[:error] = "There was an issue adding your link..."
     end
-    redirect_to "/packages/customise/#{session[:current_customized_package]}"
+    redirect_back(fallback_location: root_path)
   end
 
   private

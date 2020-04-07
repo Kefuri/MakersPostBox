@@ -11,6 +11,19 @@ class PackagesController < ApplicationController
     redirect_to("/packages/customise/" + latest_id.to_s)
   end
 
+  def new_custom
+    latest = Package.create(users_id: session[:current_user_id])
+    redirect_to("/packages/customise_blank/" + latest.id.to_s)
+  end
+
+  def customise_blank
+    @package = Package.find(params[:id])
+    session[:return_to] ||= request.referer
+    @elements = Element.where packages_id: @package.id
+    @element_to_add = Element.new()
+
+  end
+
   def customise_dogs
     @element_to_add = Element.new()
     @package = Package.find(params[:id])

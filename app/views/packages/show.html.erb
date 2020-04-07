@@ -5,7 +5,6 @@
   <script src='/app/assets/javascripts/application.js'></script>
   <h1>Gift of Dogs<i class="fas fa-dog"></i></h1>
   <p>Here are your cute dog pics!</p>
-
  <div class="gallery" id="gallery">
     <% @elements.each do | element | %>
       <% if element.link.include? "youtube.com/embed" %>
@@ -87,7 +86,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
 
-<p>Click on the button at the bottom of this page to get the shareable link.</p>
+
 
 <button class="open-button" onclick="openForm()">Share this page!</button>
 

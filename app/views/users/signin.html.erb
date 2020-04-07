@@ -2,13 +2,16 @@
 
 <div class="container">
   <h1>Please sign in</h1>
-  <p>Please fill the below fields.</p>
+  <p>
   <div class="success_flash">
     <%= flash[:success]%>
   </div>
   <div class="error_flash">
     <%= flash[:error]%>
   </div>
+  </p>
+  <p>Please fill the below fields</p>
+  
 
   <%= bootstrap_form_for(:session) do |form| %>
     <p>

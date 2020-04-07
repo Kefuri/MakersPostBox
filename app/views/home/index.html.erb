@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%# TODO: Sort out why title isn't showing %>
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <title>Home Page</title>
 </head>
@@ -15,13 +15,22 @@
   <%= flash[:error]%>
   </div>
 
-  <div class="container">
-    <p>
-    <h1>Welcome to Postbox!</h1>
-    Choose from the following options:
-    </p>
-    <a href="/premade/dogs">Dogs</a>
-  </div>
+  <div id="wrapper">
+
+				<!-- Banner -->
+					<div>
+						<div class='home'>
+					
+					<section id="banner">
+						<div class="inner">
+							<div class="content">	
+                <h1>Welcome to Postbox!</h1>
+                <p> Choose from the following options:</p> 
+                <a href="/premade/dogs">Dogs</a>
+							</div>
+						</div>
+          </div>
+        </section>
 
 </body>
 </html>

@@ -7,14 +7,4 @@ class PremadeController < ApplicationController
     @resources = Element.where packages_id: package.id
   end
 
-  def edit
-    package = Package.find_by(premadepackage: "dogs") 
-    @resources = Element.where packages_id: package.id
-  end
-
-  def share
-    package = Package.find_by(premadepackage: "dogs") 
-    @resources = Element.where packages_id: package.id
-  end
-
 end

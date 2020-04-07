@@ -1,5 +1,5 @@
 class PackagesController < ApplicationController
-  skip_before_action :require_login
+  skip_before_action :require_login, only: [:show]
   def new_dogs
     latest = Package.create(users_id: session[:current_user_id])
     latest_id = latest.id

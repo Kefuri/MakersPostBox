@@ -12,6 +12,9 @@
     <%= element.text_field :alt_tag, placeholder: "Add a tag here" %>
     <%= element.submit "Submit"%>
   <% end %>
+  <div>
+    <a href="/packages/show/<%= @package.id %>">Done? Wrap gift and share!</a>
+  </div>
 </div>
   <div class="gallery" id="gallery">
       <% @elements.each do | element | %>

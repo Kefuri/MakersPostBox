@@ -1,6 +1,6 @@
 class PackagesController < ApplicationController
 
-  def new
+  def new_dogs
     latest = Package.create(users_id: session[:current_user_id])
     latest_id = latest.id
     package = Package.find_by(premadepackage: "dogs") 
@@ -24,7 +24,7 @@ class PackagesController < ApplicationController
 
   end
 
-  def customise
+  def customise_dogs
     @element_to_add = Element.new()
     @package = Package.find(params[:id])
     session[:current_customized_package] = @package.id

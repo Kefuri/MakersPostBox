@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'premade/share', to: 'premade#share'
 
   get 'packages/new'
+  get 'packages/new_custom'
+  get 'packages/customise_blank/:id', to: "packages#customise_blank"
   get '/packages/customise/:id', to: "packages#customise", as: 'customise'
   get 'home/index'
 

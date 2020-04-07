@@ -31,6 +31,10 @@ class PackagesController < ApplicationController
     @elements = Element.where packages_id: @package.id
   end
 
+  def show
+    @elements = Element.where packages_id: params[:id]
+  end
+
   private
 
   def add_link_to_package_elements(link)

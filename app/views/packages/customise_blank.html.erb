@@ -1,0 +1,35 @@
+<% @uri = request.env['PATH_INFO'] %>
+
+<div class="container">
+  <h2>This is a blank page... Make it snazzy!</h2>
+  <script src='/app/assets/javascripts/application.js'></script>
+  <div class="gallery" id="gallery">
+      <% @elements.each do | element | %>
+        <% if element.link.include? "youtube.com/embed" %>
+          <div class="gallery-item">
+            <div class="content">
+              <iframe width="560" height="315" src=<%= element.link %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt=<%= element.alt_tag %>></iframe>
+            </div>
+          </div>
+        <% else %>
+          <div class="gallery-item">
+            <div class="content">
+              <img src=<%= element.link %> alt=<%= element.alt_tag %> >
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="element-box">
+  <%= form_for @element_to_add do |element| %>
+    <%= element.hidden_field :packages_id, :value => @package.id %>
+    <%= element.label :link %>
+    <%= element.text_field :link, placeholder: "Add your link here" %>
+    <%= element.label :alt_tag %>
+    <%= element.text_field :alt_tag, placeholder: "Add a tag for your image here" %>
+    <%= element.submit "Submit"%>
+  <% end %>
+</div>

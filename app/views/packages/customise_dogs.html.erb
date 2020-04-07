@@ -7,9 +7,22 @@
 <div class="container">
   <script src='/app/assets/javascripts/application.js'></script>
   <h1>Gift of Dogs<i class="fas fa-dog"></i></h1>
-  <p>Here are your cute dog pics!</p>
-
- <div class="gallery" id="gallery">
+  <p>Edit this page by adding new images of gifs here!</p>
+  <div class="element-box">
+    <%= form_for @element_to_add do |element| %>
+      <%= element.label :packages_id %>
+      <%= element.hidden_field :packages_id, :value => session[:current_customized_package] %>
+      <%= element.label :link %>
+      <%= element.text_field :link, placeholder: "Add your link here" %>
+      <%= element.label :alt_tag %>
+      <%= element.text_field :alt_tag, placeholder: "Add a tag for your image here" %>
+      <%= element.submit "Submit"%>
+    <% end %>
+  </div>
+  <div>
+    <a href="/packages/show/<%= @package.id %>">Done? Wrap gift and share!</a>
+  </div>
+  <div class="gallery" id="gallery">
     <% @elements.each do | element | %>
       <% if element.link.include? "youtube.com/embed" %>
         <div class="gallery-item">
@@ -28,14 +41,3 @@
   </div>
 </div>
 
-<div class="element-box">
-  <%= form_for @element_to_add do |element| %>
-    <%= element.label :packages_id %>
-    <%= element.hidden_field :packages_id, :value => session[:current_customized_package] %>
-    <%= element.label :link %>
-    <%= element.text_field :link, placeholder: "Add your link here" %>
-    <%= element.label :alt_tag %>
-    <%= element.text_field :alt_tag, placeholder: "Add a tag for your image here" %>
-    <%= element.submit "Submit"%>
-  <% end %>
-</div>

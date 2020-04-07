@@ -13,7 +13,11 @@ class PackagesController < ApplicationController
 
   def customise
     @element_to_add = Element.new()
+    p "Element to add"
+    p @element_to_add
     @package = Package.find(params[:id])
+    p "package"
+    p @package
     session[:current_customized_package] = @package.id
     @elements = Element.where packages_id: @package.id
   end

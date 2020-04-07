@@ -30,7 +30,7 @@
 
 <div class="element-box">
   <%= form_for @element_to_add do |element| %>
-    <%= element.hidden_field :packages_id, :value => @package_id %>
+    <%= element.hidden_field :packages_id, :value => @package.id %>
     <%= element.label :link %>
     <%= element.text_field :link, placeholder: "Add your link here" %>
     <%= element.label :alt_tag %>

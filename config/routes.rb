@@ -11,11 +11,15 @@ Rails.application.routes.draw do
   get 'premade/edit', to: 'premade#edit'
   get 'premade/share', to: 'premade#share'
 
+  get 'packages/new'
+  get '/packages/customise/:id', to: "packages#customise", as: 'customise'
   get 'home/index'
 
   resources :articles
   resources :users
   resources :sessions
+  resources :packages
+  resources :elements
 
   namespace :premade do
     resources :dogs, :cats

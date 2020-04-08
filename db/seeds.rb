@@ -27,13 +27,17 @@ end
 premade_package_cats = Package.create(users_id: premade_user.id, created_at: Time.now, updated_at: Time.now, premadepackage: "cats")
 
 elements_for_cats = [
+  ["https://i.imgur.com/XyWReCe.jpg", "M's Cat 7"],
+  ["https://i.imgur.com/kWNC9pr.jpg", "M's Cat 6"],
+  ["https://i.imgur.com/LSLJYih.jpg", "M's Cat 5"],
+  ["https://i.imgur.com/b7tciv4.jpg", "M's Cat 4"],
+  ["https://i.imgur.com/BE5BBRa.jpg", "M's Cat 3"],
+  ["https://i.imgur.com/Q6udZig.jpg", "M's Cat 2"],
+  ["https://i.imgur.com/9FI45jK.jpg", "Meg's cat"],
   ["https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1942&q=80", "bedcovers kitty"],
   ["https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80", "hi five"],
   ["https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80§", "butterfly kitty"],
   ["https://images.unsplash.com/photo-1560509923-5a0de7e060a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1558&q=80", "cuddling kittens"],
-  ["https://www.youtube.com/embed/-8JQB_wXjmk", "cute cats video"],
-  ["https://www.youtube.com/embed/WXWfhvK7TM0","cats being cute video"],
-  ["https://www.youtube.com/embed/uHKfrz65KSU", "more cute cats video"],
   ["https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80", "sunglasses cat"],
 ]
 

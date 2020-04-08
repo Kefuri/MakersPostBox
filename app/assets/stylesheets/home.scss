@@ -1,3 +1,289 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    display: inherit;
+    box-sizing: border-box;    
+}
+
+
+
+body {
+    line-height: 1;
+
+}
+
+
+.banner{
+    width: 100%;
+    height: 250px;
+    background-color: #3B8686;
+    padding-top: 120px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-title h1{
+   font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+font-weight: 600;
+font-size: 50px;
+line-height: 1.04;
+letter-spacing: -.028em;
+color: white;
+text-decoration:none;
+
+}
+
+.banner-content p{
+   font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.04;
+letter-spacing: -.028em;
+color: white;
+text-transform: uppercase;
+}
+
+
+.major .link{
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.04;
+    letter-spacing: -.028em;
+    color: rgba(0,0,0,.8);
+    text-decoration:none;
+    padding-right: 20px;
+    
+    }
+    @media screen and (max-width: 480px) {
+    .major .link {
+        font-size: 35px;
+        padding-right: 30px;
+        }
+    }
+    .major{
+         margin: 162px 0px 0px 20px;
+    }
+    .major p {
+        font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+        text-transform: uppercase;
+        font-size:15px;
+        padding: 5px 10px 20px ;
+    }
+    @media screen and (max-width: 480px) {
+    .major p {
+        font-size: 12px;
+        }
+    }
+
+    .inner{
+        color:white;
+        text-align: center;
+
+    }
+    .home {
+        width: 100%;
+        height:700px;
+        float:left;
+        background-image:url("https://images.unsplash.com/photo-1577217534079-41d6bb68ac50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    }
+
+    @media screen and (max-width: 750px) {
+    .home{
+        height:630px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+    .home{
+        height:470px;
+        }
+    }
+
+    .content{
+        margin-top: 150px;
+    }
+
+
+
+        body {
+        line-height: 1;
+
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    blockquote, q {
+        quotes: none;
+    }
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+
+    @media screen and (max-width: 750px) {
+    .home{
+        height:630px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+    .home{
+        height:470px;
+        }
+    }
+
+.tiles{
+    display: flex;
+    flex-wrap: wrap;
+    clear:both;
+}
+.images {
+    flex:1 1 33%;
+}
+.tiles .tiles-wide {
+    flex: 2 1 66%;
+}
+
+
+
+
+
+    .major .link{
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.04;
+    letter-spacing: -.028em;
+    color: rgba(0,0,0,.8);
+    text-decoration:none;
+    padding-right: 20px;
+    
+    }
+    @media screen and (max-width: 480px) {
+    .major .link {
+        font-size: 35px;
+        padding-right: 30px;
+        }
+    }
+    .major{
+         margin: 162px 0px 0px 20px;
+    }
+    .major p {
+        font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+        text-transform: uppercase;
+        font-size:15px;
+        padding: 5px 10px 20px ;
+        
+    }
+    .major a{
+        color:black;
+
+    }
+    @media screen and (max-width: 480px) {
+    .major p {
+        font-size: 12px;
+        }
+    }
+
+    .inner{
+        color:white;
+        text-align: center;
+
+    }
+    .content{
+        font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+        padding:50px 15px 15px 15px;
+        font-size:30px;
+    }
+    @media screen and (max-width: 480px) {
+    .content {
+        font-size: 25px;
+        padding:30px 15px 15px 15px;
+        }
+    }
+
+
+
+    .arrow {
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0; 
+    margin-left: auto;
+    
+}
+
+    .arrow-portfolio {
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0;
+    }
+
+
+    .image01 {
+    background-color: #ffffff;
+    }
+    .image01:hover {
+        background-color: #b83f3f ;
+    }
+
+    .image02 {
+    background-color: #ececec;
+    }
+    .image02:hover {
+        background-color:#f98787;
+        }
+
+    .image03 {
+    background-color: #d0d0d0;
+    }
+    .image03:hover {
+        background-color: #c14b4b;
+        }
+
+    .image04 {
+    background-color: #f6f6f6;
+    }
+    .image04:hover {
+        background-color:#e76a6a;
+        }
+
+    .image05 {
+    background-color: #e1e1e1;
+    }
+    .image05:hover {
+        background-color:#d65b5b;
+        }
+
+    .image06 {
+    background-color: #d0d0d0;
+    }
+    .image06:hover {
+        background-color:#e76a6a;
+        }
+    h3{
+        color :black;
+        
+        }
+
+
+
+  
+

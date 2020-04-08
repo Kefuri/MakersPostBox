@@ -3,27 +3,29 @@ class PremadeController < ApplicationController
   attr_reader :user
 
   def dogs
-    package = Package.find_by(premadepackage: "dogs") 
-    @resources = Element.where packages_id: package.id
+    premade("dogs")
   end
 
   def cats
-    package = Package.find_by(premadepackage: "cats") 
-    @resources = Element.where packages_id: package.id
+    premade("cats")
   end
 
   def scenery
-    package = Package.find_by(premadepackage: "scenery") 
-    @resources = Element.where packages_id: package.id
+    premade("scenery")
   end
 
   def messages
-    package = Package.find_by(premadepackage: "messages") 
-    @resources = Element.where packages_id: package.id
+    premade("messages")
   end
 
   def love
-    package = Package.find_by(premadepackage: "love") 
+    premade("love")
+  end
+
+  private
+
+  def premade(package_name)
+    package = Package.find_by(premadepackage: "#{package_name}")
     @resources = Element.where packages_id: package.id
   end
 end

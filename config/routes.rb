@@ -12,23 +12,23 @@ Rails.application.routes.draw do
 
   get 'premade/dogs'
   get 'packages/new_dogs'
-  get '/packages/customise_dogs/:id', to: "packages#customise_dogs"
+  get '/packages/customise_dogs/:id', to: "packages#customise_premade"
 
   get 'premade/cats'
   get 'packages/new_cats'
-  get '/packages/customise_cats/:id', to: "packages#customise_cats"
+  get '/packages/customise_cats/:id', to: "packages#customise_premade"
 
   get 'premade/scenery'
   get 'packages/new_scenery'
-  get '/packages/customise_scenery/:id', to: "packages#customise_scenery"
+  get '/packages/customise_scenery/:id', to: "packages#customise_premade"
 
   get 'premade/messages'
   get 'packages/new_messages'
-  get '/packages/customise_messages/:id', to: "packages#customise_messages"
+  get '/packages/customise_messages/:id', to: "packages#customise_premade"
 
   get 'premade/love'
   get 'packages/new_love'
-  get '/packages/customise_love/:id', to: "packages#customise_love"
+  get '/packages/customise_love/:id', to: "packages#customise_premade"
   
   get 'packages/show/:id', to: "packages#show"
 

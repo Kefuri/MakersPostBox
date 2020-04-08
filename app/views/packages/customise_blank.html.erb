@@ -1,8 +1,21 @@
 <% @uri = request.env['PATH_INFO'] %>
 
 <div class="container">
-  <h2>This is a blank page... Make it snazzy!</h2>
+  <h2>This is a blank page... make it snazzy!</h2>
   <script src='/app/assets/javascripts/application.js'></script>
+  <div class="element-box">
+  <%= form_for @element_to_add do |element| %>
+    <%= element.hidden_field :packages_id, :value => @package.id %>
+    <%= element.label :link %>
+    <%= element.text_field :link, placeholder: "Add your link here" %>
+    <%= element.label :alt_tag %>
+    <%= element.text_field :alt_tag, placeholder: "Add a tag here" %>
+    <%= element.submit "Submit"%>
+  <% end %>
+  <div>
+    <a href="/packages/show/<%= @package.id %>">Done? Wrap gift and share!</a>
+  </div>
+</div>
   <div class="gallery" id="gallery">
       <% @elements.each do | element | %>
         <% if element.link.include? "youtu" %>
@@ -22,15 +35,4 @@
       <% end %>
     </div>
   </div>
-</div>
-
-<div class="element-box">
-  <%= form_for @element_to_add do |element| %>
-    <%= element.hidden_field :packages_id, :value => @package.id %>
-    <%= element.label :link %>
-    <%= element.text_field :link, placeholder: "Add your link here" %>
-    <%= element.label :alt_tag %>
-    <%= element.text_field :alt_tag, placeholder: "Add a tag for your image here" %>
-    <%= element.submit "Submit"%>
-  <% end %>
 </div>

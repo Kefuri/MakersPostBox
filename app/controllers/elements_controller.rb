@@ -1,5 +1,5 @@
 class ElementsController < ApplicationController
-  
+  skip_before_action :require_login
   def create
     @element_to_add = Element.create(element_params)
 

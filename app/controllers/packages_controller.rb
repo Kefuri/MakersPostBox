@@ -1,5 +1,5 @@
 class PackagesController < ApplicationController
-
+  skip_before_action :require_login, only: [:show]
   def new_dogs
     latest = Package.create(users_id: session[:current_user_id])
     latest_id = latest.id
@@ -8,7 +8,7 @@ class PackagesController < ApplicationController
     @premade_elements.each do |element|
       Element.create(link: element.link, alt_tag: element.alt_tag, packages_id: latest_id)
     end
-    redirect_to("/packages/customise/" + latest_id.to_s)
+    redirect_to("/packages/customise_dogs/" + latest_id.to_s)
   end
 
   def new_custom
@@ -29,6 +29,10 @@ class PackagesController < ApplicationController
     @package = Package.find(params[:id])
     session[:current_customized_package] = @package.id
     @elements = Element.where packages_id: @package.id
+  end
+
+  def show
+    @elements = Element.where packages_id: params[:id]
   end
 
   private

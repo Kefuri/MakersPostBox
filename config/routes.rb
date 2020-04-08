@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'packages/customise_blank/:id', to: "packages#customise_blank"
   get '/packages/customise_dogs/:id', to: "packages#customise_dogs", as: 'customise'
   get 'home/index'
+  get 'packages/show/:id', to: "packages#show"
 
   resources :articles
   resources :users

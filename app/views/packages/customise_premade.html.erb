@@ -6,7 +6,7 @@
 
 <div class="container">
   <script src='/app/assets/javascripts/application.js'></script>
-  <h1>Gift of Dogs<i class="fas fa-dog"></i></h1>
+  <h1>Create your custom package!</h1>
   <p>Edit this page by adding new images or gifs below!</p>
   <div class="element-box">
     <%= form_for @element_to_add do |element| %>
@@ -24,7 +24,8 @@
   </div>
   <div class="gallery" id="gallery">
     <% @elements.each do | element | %>
-      <% if element.link.include? "youtube.com/embed" %>
+      <% if element.link.include? "youtu" %>
+        <% element.link = "https://www.youtube.com/embed/#{element.link[-11..-1]}"%>
         <div class="gallery-item">
           <div class="content">
             <iframe width="560" height="315" src=<%= element.link %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt=<%= element.alt_tag %>></iframe>

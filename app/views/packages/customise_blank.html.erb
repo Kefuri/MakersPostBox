@@ -5,7 +5,8 @@
   <script src='/app/assets/javascripts/application.js'></script>
   <div class="gallery" id="gallery">
       <% @elements.each do | element | %>
-        <% if element.link.include? "youtube.com/embed" %>
+        <% if element.link.include? "youtu" %>
+          <% resource.link = "https://www.youtube.com/embed/#{resource.link[-11..-1]}"%>
           <div class="gallery-item">
             <div class="content">
               <iframe width="560" height="315" src=<%= element.link %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt=<%= element.alt_tag %>></iframe>

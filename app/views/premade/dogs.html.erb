@@ -13,7 +13,8 @@
 
   <div class="gallery" id="gallery">
     <% @resources.each do | resource | %>
-      <% if resource.link.include? "youtube.com/embed" %>
+      <% if resource.link.include? "youtu" %>
+        <% resource.link = "https://www.youtube.com/embed/#{resource.link[-11..-1]}"%>
         <div class="gallery-item">
           <div class="content">
             <iframe width="560" height="315" src=<%= resource.link %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt=<%= resource.alt_tag %>></iframe>

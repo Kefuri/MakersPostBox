@@ -12,23 +12,23 @@ Rails.application.routes.draw do
 
   get 'premade/dogs'
   get 'packages/new_dogs'
-  get '/packages/customise_dogs/:id', to: "packages#customise_dogs", as: 'customise'
+  get '/packages/customise_dogs/:id', to: "packages#customise_dogs"
 
   get 'premade/cats'
-  # get 'packages/new_cats'
-  # get '/packages/customise_cats/:id', to: "packages#customise_cats", as: 'customise'
+  get 'packages/new_cats'
+  get '/packages/customise_cats/:id', to: "packages#customise_cats"
 
   get 'premade/scenery'
-  # get 'packages/new_scenery'
-  # get '/packages/customise_scenerys/:id', to: "packages#customise_scenery", as: 'customise'
+  get 'packages/new_scenery'
+  get '/packages/customise_scenery/:id', to: "packages#customise_scenery"
 
   get 'premade/messages'
-  # get 'packages/new_messages'
-  # get '/packages/customise_messages/:id', to: "packages#customise_messages", as: 'customise'
+  get 'packages/new_messages'
+  get '/packages/customise_messages/:id', to: "packages#customise_messages"
 
   get 'premade/love'
-  # get 'packages/new_love'
-  # get '/packages/customise_love/:id', to: "packages#customise_love", as: 'customise'
+  get 'packages/new_love'
+  get '/packages/customise_love/:id', to: "packages#customise_love"
   
   get 'packages/show/:id', to: "packages#show"
 

@@ -32,7 +32,7 @@ class PackagesController < ApplicationController
   end
 
   def new_messages
-    lnew_package("message")
+    new_package("message")
   end
 
   def new_love

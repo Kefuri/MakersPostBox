@@ -7,20 +7,21 @@
 </head>
 <body>
   <% @uri = request.env['PATH_INFO'] %>
-
-  <div class="success_flash">
-  <%= flash[:success]%>
-  </div>
-  <div class="error_flash">
-  <%= flash[:error]%>
-  </div>
-
   <div class="container">
+    <p>
+    <div class="success_flash">
+      <%= flash[:success]%>
+    </div>
+    <div class="error_flash">
+      <%= flash[:error]%>
+    </div>
+    </p>
     <p>
     <h1>Welcome to Postbox!</h1>
     Choose from the following options:
     </p>
     <a href="/premade/dogs">Dogs</a>
+    <a href="/packages/new_custom">Custom</a>
   </div>
 
 </body>

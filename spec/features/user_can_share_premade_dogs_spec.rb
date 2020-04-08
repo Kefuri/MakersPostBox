@@ -6,14 +6,14 @@ RSpec.feature "Dogs", type: :feature do
     sign_up
     visit('/premade/dogs')
     click_link("Like this template? Click to make your package!")
-    expect(page).to have_content("Edit your page below")
+    expect(page).to have_content("Edit this page by adding new images or gifs below!")
   end
   scenario "premade dogs page is editable and has link to share page" do
     # Can't edit page unless in session
     sign_up
     visit('/premade/dogs')
     click_link("Like this template? Click to make your package!")
-    click_link("Wrap gift and share!")
+    click_link("Done? Wrap gift and share!")
     expect(page).to have_content("Welcome to your gift!")
   end
   scenario "shareable page has share button that copies the link" do

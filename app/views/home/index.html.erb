@@ -8,12 +8,13 @@
 </head>
 <body>
   <% @uri = request.env['PATH_INFO'] %>
-
-  <div class="success_flash">
-    <%= flash[:success]%>
-  </div>
-  <div class="error_flash">
-    <%= flash[:error]%>
+  <div class="homeflash">
+    <div class="success_flash">
+      <%= flash[:success]%>
+    </div>
+    <div class="error_flash">
+      <%= flash[:error]%>
+    </div>
   </div>
 
   <div id="wrapper">

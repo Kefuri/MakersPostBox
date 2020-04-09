@@ -1,12 +1,17 @@
 <% @uri = request.env['PATH_INFO'] %>
 
-<%= flash[:success] %>
-<%= flash[:error] %>
-
 
 <div class="container">
   <script src='/app/assets/javascripts/application.js'></script>
   <h1>Create your custom package!</h1>
+  <div class="addelementflash">
+    <p>
+    <%= flash[:success] %>
+    </p>
+    <p>
+    <%= flash[:error] %>
+    </p>
+  </div>
   <p>Edit this page by adding new images or gifs below!</p>
   <div class="element-box">
     <%= form_for @element_to_add do |element| %>

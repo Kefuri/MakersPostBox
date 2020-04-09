@@ -8,14 +8,14 @@
 </head>
 <body>
   <% @uri = request.env['PATH_INFO'] %>
-
-  <div class="success_flash">
-    <%= flash[:success]%>
+  <div class="homeflash">
+    <div class="success_flash">
+      <%= flash[:success]%>
+    </div>
+    <div class="error_flash">
+      <%= flash[:error]%>
+    </div>
   </div>
-  <div class="error_flash">
-    <%= flash[:error]%>
-  </div>
-
   <div id="wrapper">
 
         <!-- Banner -->
@@ -41,37 +41,37 @@
               <div id="portfolio" class="images image01 tiles-wide">
               <header class="major">
               <h3><a href="/premade/dogs">Dogs</a></h3>
-                <p>Here are your cute dog pics!</p>
+                <p>Choose some paw-some dog pics</p>
               </header>
               </div>
               <div class="images image02">
               <header class="major">
                 <h3><a href="/premade/cats">Cats</a></h3>
-                <p>feugiat amet tempus</p>
+                <p>Try some puuuurfect cat pics</p>
               </header>
               </div>
               <div class="images image03">
               <header class="major">
               <h3><a href="/premade/scenery">Scenery</a></h3>
-                <p>Lorem etiam nullam</p>
+                <p>Love the view? You'll love these</p>
               </header>
               </div>
               <div class="images image04 tiles-wide">
               <header class="major">
               <h3><a href="/premade/messages">Messages</a></h3>
-                <p>Nisl sed aliquam</p>
+                <p>Because we all need a good motivational quote</p>
               </header>
               </div>
               <div class="images image05 tiles-wide">
               <header class="major">
               <h3><a href="/premade/love">Love</a></h3>
-                <p>Ipsum dolor sit amet</p>
+                <p>Need something special for that special someone?</p>
               </header>
               </div>
               <div class="images image06">
               <header class="major">
               <h3><a href="/packages/new_custom">Custom</a></h3>
-                <p>Feugiat amet tempus</p>
+                <p>Share your unique creation that's as perfect as you</p>
               </header>
               </div>
 
